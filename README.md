@@ -42,6 +42,10 @@ sns.barplot (x=df['Duration'],y=df['Price'])
 
 ![image](https://user-images.githubusercontent.com/113016781/192111820-01dc7fd3-aeef-46f8-b8b4-a7f010ffc164.png)
 
+sns.barplot(x=df["Arrival_Time"],y=df["Price"],data=df)
+
+![image](https://user-images.githubusercontent.com/113016781/192112514-fe12d9f0-15ae-44aa-9e5f-2c618e8c1e24.png)
+
 states=df.loc[:,["Duration","Price"]]
 
 states=states.groupby(by=["Duration"]).sum().sort_values(by="Price")
@@ -66,8 +70,10 @@ df.corr()
 
 ![image](https://user-images.githubusercontent.com/113016781/192112024-5b1acb6f-1325-4499-b7b0-cd01335d32ad.png)
 
-
-import numpy as np
+Categorical & Categorical
+Heatmap
+ 
+ import numpy as np
 
 import seaborn as sn
 
